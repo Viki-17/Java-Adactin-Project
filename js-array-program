@@ -1,0 +1,152 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// console.log(0?true:false)
+// const array = [56,54,87,12,1,26,40]
+
+//sum of first 4 largest numbers
+// let sorted
+// for(let i=0; i<array.length; i++){
+//     for(let j=i+1; j<array.length; j++){
+//         if(array[i]<array[j]){
+//             sorted = array[i]
+//             array[i]= array[j]
+//             array[j] = sorted
+//         }
+//     }
+// }
+// console.log(array)
+// let sum = 0
+// for(let i=0; i<4; i++){
+
+//     sum= array[i]+ sum
+// }
+// console.log(sum)
+
+const test = "a2b1c5d3t";
+
+function reverseNumbersInPlace(str) {
+  return str.replace(/\d/g, (match) => {
+    return match.split("").reverse().join("");
+  });
+}
+console.log(reverseNumbersInPlace(test));
+
+// let array=[
+//   99, 44,  6,   2, 1,
+//   5, 63, 87, 283, 4,
+//   0
+// ]
+//bubble sort
+// let sorted;
+// for(let i=0; i<array.length; i++){
+//     for(let j=i+1; j<array.length; j++){
+//         if(array[i]>array[j]){
+//             sorted=array[i]
+//             array[i]=array[j]
+//             array[j]= sorted
+//         }
+//     }
+// }
+// console.log(array)
+
+//selection sort
+
+// for(let i=0; i<array.length; i++){
+// let min = i
+// let temp = array[i]
+//     for(let j=i+1; j<array.length; j++){
+//         if(array[j]<array[min]){
+//             min = j
+//         }
+
+//     }
+//     array[i] = array[min]
+//     array[min]=temp
+// }
+// console.log(array)
+
+// let sorted = array.sort((a,b)=>{
+//     return(a-b)
+// })
+// console.log(sorted)
+
+// const duplicate = [56,56,12,12,1,2,2]
+
+// let set = Array.from(new Set(duplicate))
+// console.log(set)
+
+// const reverse ="the quick brown fox"
+// let reversed = []
+// for(let i=reverse.length; i>=0; i--){
+//   reversed.push(reverse[i])
+// }
+// console.log(reversed.join(''))
+
+// let array1 = [0,3,4,31]
+// let array2 = [4,6,30]
+
+// function mergeSorted(arr1,arr2){
+//     let mergeArray = []
+
+//     mergeArray.push(...array1)
+//     mergeArray.push(...array2)
+
+//     mergeArray.sort((a,b)=>{
+//         return (a-b)
+//     })
+//     return mergeArray
+// }
+// console.log(mergeSorted(array1,array2))
+
+//leetcode 3
+//move zero to end
+// let nums = [1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9]
+// let count = 0
+// for(let i=0; i<nums.length; i++){
+//   if(nums[i]!=0){
+
+//       console.log("count", count)
+//       console.log(nums[count])
+//       nums[count++]= nums[i]
+//   }
+// }
+//  while (count < nums.length){
+//   console.log("count", count)
+//       console.log(nums[count])
+//         nums[count++] = 0;
+//  }
+// console.log(nums)
+
+// i =0 count 0
+// i=1  count 0
+
+//leetcode 2
+//contains duplicate ???
+// let nums = [1,2,3,4]
+
+// function containsDuplicate(nums){
+// for(let i=0; i<nums.length; i++){
+//     for(let j=i+1; j<nums.length; j++){
+//         if(nums[i]===nums[j]){
+//             return true
+//         }
+//     }
+// }
+// return false
+// }
+// console.log(containsDuplicate(nums))
+
+//leetcode 1
+// let twoSum = function(nums, target) {
+//     let output = []
+//     for(let i=0; i<nums.length; i++){
+//       for(let j=i+1; j<nums.length; j++){
+//         if(nums[i]+nums[j]===target){
+//           output.push(i)
+//           output.push(j)
+//         }
+//       }
+//     }
+//     return output
+// }
+// console.log(twoSum([3,3],6))
